@@ -28,7 +28,7 @@
 	}
 
 	.footer_about_us {
-		padding: 10px;
+		padding: 20px;
 		/*outline: 1px solid red;*/
 		width: 33%;
 		display: inline-block;
@@ -37,7 +37,7 @@
 
 
 	.footer_about_cryptohub {
-		padding: 10px;
+		padding: 20px;
 		/*outline: 1px solid yellow;*/
 		width: 33%;
 		display: inline-block;
@@ -74,7 +74,7 @@
 	}
 
 	input[type=text] {
-		width: 72%;
+		width: 70%;
 		padding: 12px;
 	}
 
