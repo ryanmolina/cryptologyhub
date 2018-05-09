@@ -6,6 +6,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <?php if (is_singular() && pings_open(get_queried_object())) : ?>
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <?php endif; ?>
 <?php wp_head(); ?>
 </head>

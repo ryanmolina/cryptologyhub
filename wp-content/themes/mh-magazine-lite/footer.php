@@ -11,6 +11,15 @@
 		min-height: 300px;
 		padding: 20px;
 		color: white;
+		background-image: url('https://static1.squarespace.com/static/58716df49f745668dc6eaa89/t/5a31cf1124a6943e96223fce/1513213790260/Kansas-City-Skyline.png');
+	    background-position: bottom;
+	    background-repeat: no-repeat;
+	    background-size: 100%;
+	    background-blend-mode: color-burn;
+	}
+
+	.mh-copyright-wrap {
+		background-color: transparent;
 	}
 
 	.footer_wrap h4 {
@@ -67,7 +76,7 @@
 	.subs_wrapper {
 		width: 100%;
 		background: #fff;
-	    /*max-width: 300px;*/
+	    max-width: 300px;
 	    position: relative;
 	    padding: 4px;
 	    margin-top: 20px;
@@ -79,9 +88,9 @@
 	}
 
 	.btnSubscribe {
-		/*position: absolute;*/
+		position: absolute;
 	    top: 4px;
-	    /*right: 4px;*/
+	    right: 4px;
 	    padding: 12px 8px;
 	    color: #fff !important;
 	    border-radius: 0;
@@ -104,19 +113,52 @@
 				</div>
 				<p>Cryptology. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 
-				<div class="mega_social_icons">
-					<div><a href=""></a></div>
-					<div><a href=""></a></div>
-					<div><a href=""></a></div>
-					<div><a href=""></a></div>
-					<div><a href=""></a></div>
-					<div><a href=""></a></div>
-				</div>
+				<div id="mega_social_icons" style="display: inline-flex;">
+					
+					<div id="mega-social-btn" style="margin: 0 3px;">
+						<a href="https://www.facebook.com/" target="" style="font-size: 20px; border-radius: 50%; background: rgb(59, 89, 152); width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="" data-onleavebg="#3b5998" data-onleavecolor="">
+							<i class="icon-facebook" aria-hidden="true"></i>
+						</a>
+					</div>
+							
+					<div id="mega-social-btn" style="margin: 0 3px;">
+						<a href="https://twitter.com/?lang=en" target="" style="font-size: 20px; border-radius: 50%; background: rgb(85, 172, 238); width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="" data-onleavebg="#55acee" data-onleavecolor="">
+							<i class="icon-twitter" aria-hidden="true"></i>
+						</a>
+					</div>
+							
+					<div id="mega-social-btn" style="margin: 0 3px;">
+						<a href="https://www.youtube.com/" target="" style="font-size: 20px; border-radius: 50%; background: rgb(187, 0, 0); width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="" data-onleavebg="#bb0000" data-onleavecolor="">
+							<i class="icon-youtube" aria-hidden="true"></i>
+						</a>
+					</div>
+							
+					<div id="mega-social-btn" style="margin: 0 3px;">
+						<a href="https://www.tumblr.com/" target="" style="font-size: 20px; border-radius: 50%; background: rgb(44, 71, 98); width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="" data-onleavebg="#2c4762" data-onleavecolor="">
+							<i class="icon-tumblr" aria-hidden="true"></i>
+						</a>
+					</div>
+							
+					<div id="mega-social-btn" style="margin: 0 3px;">
+						<a href="https://www.instagram.com/" target="" style="font-size: 20px; border-radius: 50%; background: rgb(18, 86, 136); width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="" data-onleavebg="#125688" data-onleavecolor="">
+							<i class="icon-instagramm" aria-hidden="true"></i>
+						</a>
+					</div>
+							
+					<div id="mega-social-btn" style="margin: 0 3px;">
+						<a href="https://www.google.com/gmail/about/#" target="" style="font-size: 20px; border-radius: 50%; color: ; background: #f9443a; width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="" data-onleavebg="#f9443a" data-onleavecolor="">
+							<i class="icon-mail" aria-hidden="true"></i>
+						</a>
+					</div>
+		
+				</div> <!-- mega_social_icons -->
 
-				<div class="subs_wrapper">
-					<input class="subscribeText" type="text" name="subscribeText" placeholder="Please Type Your Email">
-					<button class="btnSubscribe">Subscribe</button>
-				</div>
+				<?php echo do_shortcode('[social_vc_father][social_vc_son radius="50%" ][social_vc_son][social_vc_son][social_vc_son][social_vc_son][social_vc_son][/social_vc_father][mc4wp_form id="2394"]'); ?>
+
+				<!-- <div class="subs_wrapper form-group">
+					<input class="subscribeText form-control" type="text" name="subscribeText" placeholder="Please Type Your Email">
+					<button class="btnSubscribe form-control">Subscribe</button>
+				</div> -->
 
 			</div>
 
@@ -160,10 +202,3 @@
 </html>
 
 
-
-<!-- 		<div class="mh-copyright-wrap">
-			<div class="mh-container mh-container-inner mh-clearfix">
-				<p class="mh-copyright"><?php printf(esc_html__('CryptologyHub 2018 All rights reserved.'), date("Y"), '<a href="' . esc_url('https://www.mhthemes.com/') . '" rel="nofollow">MH Themes</a>'); ?></p>
-			</div>
-		</div>
-	</div> -->
