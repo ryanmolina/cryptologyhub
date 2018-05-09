@@ -29,7 +29,7 @@
 		background-color: transparent;
 	}
 
-	.footer_wrap h4 {
+	.footer_wrap h5 {
 		color: white;
 		margin-bottom: 10px;
 		background-color: #33aae2 ;
@@ -100,11 +100,16 @@
 		position: absolute;
 	    top: 4px;
 	    right: 4px;
-	    padding: 12px 8px;
+	    padding: 12px 10px;
 	    color: #fff !important;
 	    border-radius: 0;
 	    background: #0093e4 !important;
 	    cursor: pointer;
+	    border: none;
+	}
+
+	.btnSubscribe:hover {
+		opacity: 0.7;
 	}
 
 	.clearfix {
@@ -130,11 +135,19 @@
 	}
 
 	
-	
+	#mega-social-btn a:hover {
+		
+		-moz-box-shadow: 0 0 10px #ccc;
+		-webkit-box-shadow: 0 0 10px #ccc;
+		box-shadow: 0 0 10px #ccc;
+	}
 	
 	#mega-social-btn a{
 		background: transparent !important;
 	}
+
+	
+
 
 	/* MEDIA QUERY */
 
@@ -159,14 +172,14 @@
 
 			<div class="footer_about_us col-md-12 col-sm-12">
 				<div class="footer_logo_wrap">
-					<img style="filter: brightness(2);" class="footer_logo" src="http://localhost/projects/cryptologyhub/wp-content/uploads/2018/05/CRYPTOLOGYHUB-DARK-BLUE.png">
+					<img class="pulse" style="filter: brightness(2);" class="footer_logo" src="http://localhost/projects/cryptologyhub/wp-content/uploads/2018/05/CRYPTOLOGYHUB-DARK-BLUE.png">
 				</div>
 				<p>Cryptology. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 					<br>
 
 				<div id="mega_social_icons" style="display: inline-flex;">
 					<div id="mega-social-btn" style="margin: 0 3px;">
-						<a href="https://www.facebook.com/" target="" style="font-size: 20px; border-radius: 50%; background: rgb(59, 89, 152); width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="" data-onleavebg="#3b5998" data-onleavecolor="">
+						<a href="https://www.facebook.com/" target="" style="font-size: 20px; border-radius: 50%; background: rgb(59, 89, 152); width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="#005a8c" data-onleavebg="#3b5998" data-onleavecolor="">
 						
 								<img src='<?php echo get_template_directory_uri().'/images/facebook.png' ?>'>
 						
@@ -174,31 +187,31 @@
 					</div>
 							
 					<div id="mega-social-btn" style="margin: 0 3px;">
-						<a href="https://twitter.com/?lang=en" target="" style="font-size: 20px; border-radius: 50%; background: rgb(85, 172, 238); width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="" data-onleavebg="#55acee" data-onleavecolor="">
+						<a href="https://twitter.com/?lang=en" target="" style="font-size: 20px; border-radius: 50%; background: rgb(85, 172, 238); width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="#005a8c" data-onleavebg="#55acee" data-onleavecolor="">
 							<img src='<?php echo get_template_directory_uri().'/images/twitter.png' ?>'>
 						</a>
 					</div>
 							
 					<div id="mega-social-btn" style="margin: 0 3px;">
-						<a href="https://www.youtube.com/" target="" style="font-size: 20px; border-radius: 50%; background: rgb(187, 0, 0); width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="" data-onleavebg="#bb0000" data-onleavecolor="">
+						<a href="https://www.youtube.com/" target="" style="font-size: 20px; border-radius: 50%; background: rgb(187, 0, 0); width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="#005a8c" data-onleavebg="#bb0000" data-onleavecolor="">
 							<img src='<?php echo get_template_directory_uri().'/images/youtube.png' ?>'>
 						</a>
 					</div>
 							
 					<div id="mega-social-btn" style="margin: 0 3px;">
-						<a href="https://www.tumblr.com/" target="" style="font-size: 20px; border-radius: 50%; background: rgb(44, 71, 98); width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="" data-onleavebg="#2c4762" data-onleavecolor="">
+						<a href="https://www.tumblr.com/" target="" style="font-size: 20px; border-radius: 50%; background: rgb(44, 71, 98); width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="#005a8c" data-onleavebg="#2c4762" data-onleavecolor="">
 							<img src='<?php echo get_template_directory_uri().'/images/tumblr.png' ?>'>
 						</a>
 					</div>
 							
 					<div id="mega-social-btn" style="margin: 0 3px;">
-						<a href="https://www.instagram.com/" target="" style="font-size: 20px; border-radius: 50%; background: rgb(18, 86, 136); width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="" data-onleavebg="#125688" data-onleavecolor="">
+						<a href="https://www.instagram.com/" target="" style="font-size: 20px; border-radius: 50%; background: rgb(18, 86, 136); width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="#005a8c" data-onleavebg="#125688" data-onleavecolor="">
 							<img src='<?php echo get_template_directory_uri().'/images/instragram.png' ?>'>
 						</a>
 					</div>
 							
 					<div id="mega-social-btn" style="margin: 0 3px;">
-						<a href="https://www.google.com/gmail/about/#" target="" style="font-size: 20px; border-radius: 50%; color: ; background: #f9443a; width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="" data-onleavebg="#f9443a" data-onleavecolor="">
+						<a href="https://www.google.com/gmail/about/#" target="" style="font-size: 20px; border-radius: 50%; color: ; background: #f9443a; width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="#005a8c" data-onleavebg="#f9443a" data-onleavecolor="">
 							<img width="131px" src='<?php echo get_template_directory_uri().'/images/gmail.png' ?>'>
 						</a>
 					</div>
@@ -215,14 +228,14 @@
 			</div>
 
 			<div class="footer_about_cryptohub col-md-12 col-sm-12">
-				<h4>About CryptologyHUB</h4>
+				<h5>About CryptologyHUB</h5>
 				<ul class="footer_list">
 					<li><?php wp_nav_menu( array( 'theme_location' => 'footernav' ) ); ?></li>
 				</ul>
 			</div>		
 
 			<div class="footer_about_cryptohub col-md-12 col-sm-12">
-				<h4>News</h4>
+				<h5>News</h5>
 				<ul class="footer_list">
 					<li><?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?></li>
 				</ul>
