@@ -135,11 +135,12 @@
 	}
 
 	
-	#mega-social-btn a:hover {
-		
-		-moz-box-shadow: 0 0 10px #ccc;
-		-webkit-box-shadow: 0 0 10px #ccc;
-		box-shadow: 0 0 10px #ccc;
+	#mega-social-btn img:hover {
+		/*-moz-box-shadow: 0 0 10px #ccc;*/
+		/*-webkit-box-shadow: 0 0 10px #ccc;*/
+		/*box-shadow: 0 0 10px #ccc;*/
+		filter: drop-shadow(0px 0px 9px #ffffff42) brightness(1.1);
+    	color: #ffffff42;
 	}
 	
 	#mega-social-btn a{
