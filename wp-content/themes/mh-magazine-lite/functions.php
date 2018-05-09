@@ -38,6 +38,13 @@ function mh_before_container_close() {
 
 /***** Theme Setup *****/
 
+// This is for the diplaying of secondary menus on footer.
+
+register_nav_menus( array(  
+	'secondary' => __('Secondary Navigation', 'mh-magazine-lite'),
+	'footernav' => __('Footer Navigation', 'mh-magazine-lite')
+) );
+
 if (!function_exists('mh_magazine_lite_setup')) {
 	function mh_magazine_lite_setup() {
 		load_theme_textdomain('mh-magazine-lite', get_template_directory() . '/languages');

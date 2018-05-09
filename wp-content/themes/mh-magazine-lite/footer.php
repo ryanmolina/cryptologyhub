@@ -10,6 +10,7 @@
 
 	.footer_wrap * {
 		box-sizing: border-box;
+		text-align: justify;
 	}
 
 	.footer_wrap {
@@ -212,22 +213,14 @@
 			<div class="footer_about_cryptohub">
 				<h4>About CryptologyHUB</h4>
 				<ul class="footer_list">
-					<li><a href="">Open Position</a></li>
-					<li><a href="">Write for CryptologyHUB</a></li>
-					<li><a href="">Terms and Condition</a></li>
-					<li><a href="">Privacy Policy</a></li>
-					<li><a href="">Contact</a></li>
+					<li><?php wp_nav_menu( array( 'theme_location' => 'footernav' ) ); ?></li>
 				</ul>
-			</div>
+			</div>		
 
 			<div class="footer_about_cryptohub">
 				<h4>News</h4>
 				<ul class="footer_list">
-					<li><a href="">Bitcoin News</a></li>
-					<li><a href="">Ethereum</a></li>
-					<li><a href="">Litecoin</a></li>
-					<li><a href="">Altcoin News</a></li>
-					
+					<li><?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?></li>
 				</ul>
 			</div>
 
