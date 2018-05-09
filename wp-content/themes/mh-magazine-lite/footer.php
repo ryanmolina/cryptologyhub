@@ -1,5 +1,11 @@
 <?php mh_before_footer(); ?>
 <?php mh_magazine_lite_footer_widgets(); ?>
+
+
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
 <style type="text/css">
 
 	.footer_wrap * {
@@ -98,10 +104,49 @@
 	    cursor: pointer;
 	}
 
+	.clearfix {
+		content: ".";
+	    display: block;
+	    clear: both;
+	    visibility: hidden;
+	    line-height: 0;
+	    height: 0;
+	    margin: 0;
+	    padding: 0;
+	}
+
+	.mh-boxed-layout .mh-container-inner {
+		width: 100%;
+	}
+
+	.mh-container, .mh-container-inner {
+	    width: 100%;
+	    max-width: 1080px;
+	    margin: 0 auto;
+	    position: relative;
+	}
+
+	.mh-footer-nav {
+		background-color: #005a8c;
+		text-transform: uppercase;
+		color: white;
+	}
+
+	.mh-footer-nav ul {
+    float: right;
+	}
+	
+	#mega-social-btn a{
+		background: transparent !important;
+	}
+
 
 
 
 </style>
+
+
+
 <div class="footer_wrap">
 	<div class="footer_inner_wrap">
 		
@@ -112,48 +157,50 @@
 					<img style="filter: brightness(2);" class="footer_logo" src="http://localhost/projects/cryptologyhub/wp-content/uploads/2018/05/CRYPTOLOGYHUB-DARK-BLUE.png">
 				</div>
 				<p>Cryptology. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+					<br>
 
 				<div id="mega_social_icons" style="display: inline-flex;">
-					
 					<div id="mega-social-btn" style="margin: 0 3px;">
 						<a href="https://www.facebook.com/" target="" style="font-size: 20px; border-radius: 50%; background: rgb(59, 89, 152); width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="" data-onleavebg="#3b5998" data-onleavecolor="">
-							<i class="icon-facebook" aria-hidden="true"></i>
+						
+								<img src='<?php echo get_template_directory_uri().'/images/facebook.png' ?>'>
+						
 						</a>
 					</div>
 							
 					<div id="mega-social-btn" style="margin: 0 3px;">
 						<a href="https://twitter.com/?lang=en" target="" style="font-size: 20px; border-radius: 50%; background: rgb(85, 172, 238); width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="" data-onleavebg="#55acee" data-onleavecolor="">
-							<i class="icon-twitter" aria-hidden="true"></i>
+							<img src='<?php echo get_template_directory_uri().'/images/twitter.png' ?>'>
 						</a>
 					</div>
 							
 					<div id="mega-social-btn" style="margin: 0 3px;">
 						<a href="https://www.youtube.com/" target="" style="font-size: 20px; border-radius: 50%; background: rgb(187, 0, 0); width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="" data-onleavebg="#bb0000" data-onleavecolor="">
-							<i class="icon-youtube" aria-hidden="true"></i>
+							<img src='<?php echo get_template_directory_uri().'/images/youtube.png' ?>'>
 						</a>
 					</div>
 							
 					<div id="mega-social-btn" style="margin: 0 3px;">
 						<a href="https://www.tumblr.com/" target="" style="font-size: 20px; border-radius: 50%; background: rgb(44, 71, 98); width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="" data-onleavebg="#2c4762" data-onleavecolor="">
-							<i class="icon-tumblr" aria-hidden="true"></i>
+							<img src='<?php echo get_template_directory_uri().'/images/tumblr.png' ?>'>
 						</a>
 					</div>
 							
 					<div id="mega-social-btn" style="margin: 0 3px;">
 						<a href="https://www.instagram.com/" target="" style="font-size: 20px; border-radius: 50%; background: rgb(18, 86, 136); width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="" data-onleavebg="#125688" data-onleavecolor="">
-							<i class="icon-instagramm" aria-hidden="true"></i>
+							<img src='<?php echo get_template_directory_uri().'/images/instragram.png' ?>'>
 						</a>
 					</div>
 							
 					<div id="mega-social-btn" style="margin: 0 3px;">
 						<a href="https://www.google.com/gmail/about/#" target="" style="font-size: 20px; border-radius: 50%; color: ; background: #f9443a; width: 40px; height: 40px; line-height: 40px;" data-onhovercolor="" data-onhoverbg="" data-onleavebg="#f9443a" data-onleavecolor="">
-							<i class="icon-mail" aria-hidden="true"></i>
+							<img width="131px" src='<?php echo get_template_directory_uri().'/images/gmail.png' ?>'>
 						</a>
 					</div>
 		
 				</div> <!-- mega_social_icons -->
 
-				<?php echo do_shortcode('[social_vc_father][social_vc_son radius="50%" ][social_vc_son][social_vc_son][social_vc_son][social_vc_son][social_vc_son][/social_vc_father][mc4wp_form id="2394"]'); ?>
+				<?php echo do_shortcode('[mc4wp_form id="2394"]'); ?>
 
 				<!-- <div class="subs_wrapper form-group">
 					<input class="subscribeText form-control" type="text" name="subscribeText" placeholder="Please Type Your Email">
@@ -184,18 +231,43 @@
 				</ul>
 			</div>
 
-		</div>
 
-		<div class="mh-copyright-wrap">
-			<div class="mh-container mh-container-inner mh-clearfix">
-				<p class="mh-copyright"><?php printf(esc_html__('CryptologyHub 2018 All rights reserved.'), date("Y"), '<a href="' . esc_url('https://www.mhthemes.com/') . '" rel="nofollow">MH Themes</a>'); ?></p>
-			</div>
+		</div><!-- footer_row -->
+
+			
+
+		
+
+	</div><!-- footer_inner_wrap -->
+
+	<nav class="mh-navigation mh-footer-nav">
+		<div class="class="mh-container mh-container-inner clearfix>
+			<div class="menu-footer-container">
+				<ul id="menu-footer" class="menu">
+					<li id="menu-item-290" class="menu-item"><a target="" href="">Features</a></li>
+					<li id="menu-item-290" class="menu-item"><a target="" href="">Buy Theme</a></li>
+					<li id="menu-item-290" class="menu-item"><a target="" href="">Showcase</a></li>
+					<li id="menu-item-290" class="menu-item"><a target="" href="">Sitemap</a></li>
+					<li id="menu-item-290" class="menu-item"><a target="" href="">Contact</a></li>
+				</ul>
+			</div>	
+		</div>
+	</nav>
+
+	<div class="mh-copyright-wrap">
+		<div class="mh-container mh-container-inner mh-clearfix">
+			<p class="mh-copyright"><?php printf(esc_html__('CryptologyHub 2018 All rights reserved.'), date("Y"), '<a href="' . esc_url('https://www.mhthemes.com/') . '" rel="nofollow">MH Themes</a>'); ?></p>
 		</div>
 	</div>
 
+</div><!-- footer_wrap -->
 
 
-</div>
+
+
+		
+
+
 <?php mh_after_footer(); ?>
 <?php wp_footer(); ?>
 </body>
