@@ -32,7 +32,7 @@
 	.footer_wrap h4 {
 		color: white;
 		margin-bottom: 10px;
-		background-color: #005a8c;
+		background-color: #33aae2 ;
 		display: block;
 		width: 100%;
 		padding: 10px;
@@ -65,12 +65,14 @@
 		/*list-style-type: disc;*/
 		/*margin-left: 30px;*/
 	}
-
-	.footer_list li {
+	
+	.footer_list ul#menu-footer-menu li,
+	.footer_list ul#menu-footer-news li {
 		margin-bottom: 5px;
 		border-bottom: 1px dotted #636262;
 		padding-bottom: 5px;
 	}
+
 
 	.footer_list li a {
 		color: white;
@@ -101,7 +103,7 @@
 	    padding: 12px 8px;
 	    color: #fff !important;
 	    border-radius: 0;
-	    background: #ff9519 !important;
+	    background: #0093e4 !important;
 	    cursor: pointer;
 	}
 
@@ -127,21 +129,23 @@
 	    position: relative;
 	}
 
-	.mh-footer-nav {
-		background-color: #005a8c;
-		text-transform: uppercase;
-		color: white;
-	}
-
-	.mh-footer-nav ul {
-    float: right;
-	}
+	
+	
 	
 	#mega-social-btn a{
 		background: transparent !important;
 	}
 
+	/* MEDIA QUERY */
 
+	/* MOBILE */
+	@media screen and (max-width: 468px) {
+
+		.footer_about_cryptohub,
+		.footer_about_us {
+			width: 100%;
+		}
+	}
 
 
 </style>
@@ -151,9 +155,9 @@
 <div class="footer_wrap">
 	<div class="footer_inner_wrap">
 		
-		<div class="footer_row">
+		<div class="footer_row row">
 
-			<div class="footer_about_us">
+			<div class="footer_about_us col-md-12 col-sm-12">
 				<div class="footer_logo_wrap">
 					<img style="filter: brightness(2);" class="footer_logo" src="http://localhost/projects/cryptologyhub/wp-content/uploads/2018/05/CRYPTOLOGYHUB-DARK-BLUE.png">
 				</div>
@@ -201,23 +205,23 @@
 		
 				</div> <!-- mega_social_icons -->
 
-				<?php echo do_shortcode('[mc4wp_form id="2394"]'); ?>
+				
 
-				<!-- <div class="subs_wrapper form-group">
+				<div class="subs_wrapper form-group">
 					<input class="subscribeText form-control" type="text" name="subscribeText" placeholder="Please Type Your Email">
 					<button class="btnSubscribe form-control">Subscribe</button>
-				</div> -->
+				</div>
 
 			</div>
 
-			<div class="footer_about_cryptohub">
+			<div class="footer_about_cryptohub col-md-12 col-sm-12">
 				<h4>About CryptologyHUB</h4>
 				<ul class="footer_list">
 					<li><?php wp_nav_menu( array( 'theme_location' => 'footernav' ) ); ?></li>
 				</ul>
 			</div>		
 
-			<div class="footer_about_cryptohub">
+			<div class="footer_about_cryptohub col-md-12 col-sm-12">
 				<h4>News</h4>
 				<ul class="footer_list">
 					<li><?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?></li>
@@ -233,19 +237,7 @@
 
 	</div><!-- footer_inner_wrap -->
 
-	<nav class="mh-navigation mh-footer-nav">
-		<div class="class="mh-container mh-container-inner clearfix>
-			<div class="menu-footer-container">
-				<ul id="menu-footer" class="menu">
-					<li id="menu-item-290" class="menu-item"><a target="" href="">Features</a></li>
-					<li id="menu-item-290" class="menu-item"><a target="" href="">Buy Theme</a></li>
-					<li id="menu-item-290" class="menu-item"><a target="" href="">Showcase</a></li>
-					<li id="menu-item-290" class="menu-item"><a target="" href="">Sitemap</a></li>
-					<li id="menu-item-290" class="menu-item"><a target="" href="">Contact</a></li>
-				</ul>
-			</div>	
-		</div>
-	</nav>
+	
 
 	<div class="mh-copyright-wrap">
 		<div class="mh-container mh-container-inner mh-clearfix">
