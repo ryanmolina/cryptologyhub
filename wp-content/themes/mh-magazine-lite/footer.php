@@ -169,9 +169,9 @@
 <div class="footer_wrap">
 	<div class="footer_inner_wrap">
 		
-		<div class="footer_row row">
+		<div class="footer_row">
 
-			<div class="footer_about_us col-md-12 col-sm-12">
+			<div class="footer_about_us">
 				<div class="footer_logo_wrap">
 					<img class="pulse" style="filter: brightness(2);" class="footer_logo" src="http://localhost/projects/cryptologyhub/wp-content/uploads/2018/05/CRYPTOLOGYHUB-DARK-BLUE.png">
 				</div>
@@ -228,14 +228,14 @@
 
 			</div>
 
-			<div class="footer_about_cryptohub col-md-12 col-sm-12">
+			<div class="footer_about_cryptohub">
 				<h5>About CryptologyHUB</h5>
 				<ul class="footer_list">
 					<li><?php wp_nav_menu( array( 'theme_location' => 'footernav' ) ); ?></li>
 				</ul>
 			</div>		
 
-			<div class="footer_about_cryptohub col-md-12 col-sm-12">
+			<div class="footer_about_cryptohub">
 				<h5>News</h5>
 				<ul class="footer_list">
 					<li><?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?></li>
