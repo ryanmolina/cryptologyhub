@@ -221,9 +221,9 @@
 
 				
 
-				<div class="subs_wrapper form-group">
-					<input class="subscribeText form-control" type="text" name="subscribeText" placeholder="Please Type Your Email">
-					<button class="btnSubscribe form-control">Subscribe</button>
+				<div class="subs_wrapper">
+					<input class="subscribeText" type="text" name="subscribeText" placeholder="Please Type Your Email">
+					<button class="btnSubscribe">Subscribe</button>
 				</div>
 
 			</div>
