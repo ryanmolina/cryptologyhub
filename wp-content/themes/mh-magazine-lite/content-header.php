@@ -52,10 +52,14 @@
 	</div>
 	<div class="mh-main-nav-wrap">
 		<div class="nav-emblem-wrap">
-			<a href="#"><img src="http://localhost/projects/cryptologyhub/wp-content/uploads/2018/05/logo-emblem-fin01.png" class="nav-logo-emblem"></a>
+			<a href="#">
+				<img src="http://localhost/projects/cryptologyhub/wp-content/uploads/2018/05/logo-emblem-fin01.png" class="nav-logo-emblem">
+			</a>
 		</div>
 		<div class="nav-tag-wrap">
-			<img src="http://localhost/projects/cryptologyhub/wp-content/uploads/2018/05/logo-tag-fin01.png" class="nav-logo-tag">
+			<a href="#">
+				<img src="http://localhost/projects/cryptologyhub/wp-content/uploads/2018/05/logo-tag-fin01.png" class="nav-logo-tag">
+			</a>
 		</div>
 		<nav class="mh-navigation mh-main-nav mh-container mh-container-inner mh-clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 			<?php wp_nav_menu(array('theme_location' => 'main_nav')); ?>
