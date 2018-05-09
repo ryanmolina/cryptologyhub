@@ -401,10 +401,10 @@ div.wpcf7-response-output { margin: 20px 0 15px; }
 /***** Widgets *****/
 
 .mh-widget, .mh-footer-widget { margin-bottom: 25px; overflow: hidden; }
-.mh-widget-title { position: relative; font-size: 16px; font-size: 1rem; padding-bottom: 5px; margin-bottom: 20px; margin-bottom: 1.25rem; text-transform: uppercase; border-bottom: 3px solid #e64946; }
+.mh-widget-title { position: relative; font-size: 16px; font-size: 1rem; padding-bottom: 5px; margin-bottom: 20px; margin-bottom: 1.25rem; text-transform: uppercase; border-bottom: 3px solid #e64946; background: #33aae2 !important;}
 .mh-footer-widget-title { font-size: 14px; font-size: 0.875rem; color: #fff; }
 .mh-footer-widget-title a { color: #fff; }
-
+.mh-widget-title-inner { background: #0093e4 !important; }
 /***** Widgets Areas (Advertising) *****/
 
 .mh-ad-spot, .mh-info-spot { display: block; padding: 10px; text-align: center; background: #f5f5f5; }
@@ -460,7 +460,7 @@ div.wpcf7-response-output { margin: 20px 0 15px; }
 .mh-posts-stacked-overlay { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 .mh-posts-stacked-overlay-small { border-left: 1px solid #fff; }
 .mh-posts-stacked-overlay-last { border-top: 1px solid #fff; }
-.mh-posts-stacked-item { position: absolute; bottom: 25px; left: 25px; padding-right: 25px; }
+.mh-posts-stacked-item { bottom: 25px; left: 25px; padding-right: 25px; }
 .mh-posts-stacked-title { background: #2a2a2a; background: #2e2e2e !important; }
 .mh-posts-stacked-title-large { font-size: 24px; padding: 5px 10px; }
 .mh-posts-stacked-title-small { font-size: 14px; padding: 2px 5px; }
